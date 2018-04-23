@@ -1,6 +1,16 @@
 .app-list-manager {
+	margin: 3rem 0;
 
-	input {
+	.app-list-manager_list {
+	}
+
+	.app-list-manager_user-input {
+		outline: 0;
+		width: 100%;
+		display: block;
+	}
+
+	.app-list-manager_user-submit {
 		outline: 0;
 		width: 100%;
 		display: block;
