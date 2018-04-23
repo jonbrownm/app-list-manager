@@ -1,3 +1,3 @@
-import {genericComponent} from './components/genericComponent';
+import {listManager} from './components/listManager';
 
-genericComponent();
+listManager();

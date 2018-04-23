@@ -3,20 +3,32 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Init project</title>
+		<title>App List Manager</title>
 		<link rel="stylesheet" href="css/app.min.css">
 	</head>
 	<body>
-		<div class="callout large primary">
-			<div class="row column text-center">
-				<h1>Init project</h1>
-			</div>
-		</div>
-		<div class="row medium-8 large-7 columns">
-			<div class="blog-post" data-component-name="genericComponent">
-				<h3>Component title</h3>
-				<img class="thumbnail" src="https://placehold.it/850x350">
-				<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+		<div class="row">
+			<div class="columns small-6 small-centered">
+				<div data-app-list-manager class="app-list-manager">
+					<div class="row">
+						<div class="columns small-12"> 
+							<table>
+								<tbody>
+									<!-- note. populated by js -->
+									<!-- <tr><td></td></tr> -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="columns small-8"> 
+							<input type="text" placeholder="Enter item ..." />
+						</div>
+						<div class="columns small-4"> 
+							<input type="submit" value="Submit">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<script src="js/app.min.js"></script>

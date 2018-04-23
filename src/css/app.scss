@@ -16,7 +16,7 @@
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
 // @include foundation-button-group;
-@include foundation-callout;
+// @include foundation-callout;
 // @include foundation-card;
 // @include foundation-close-button;
 // @include foundation-menu;
@@ -35,7 +35,7 @@
 // @include foundation-sticky;
 // @include foundation-reveal;
 // @include foundation-switch;
-// @include foundation-table;
+@include foundation-table;
 // @include foundation-tabs;
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
@@ -48,4 +48,4 @@
 @import 'global/common';
 
 // components
-@import 'components/generic-component';
+@import 'components/app-list-manager';
