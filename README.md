@@ -2,12 +2,12 @@
 
 This repository contains everything for building, running and deploying dev.jonbrownm.com/repoSlug.
 
-*Latest version running on <http://dev.jonbrownm.com>/repoSlug*
+*Latest version running on <http://dev.jonbrownm.com/app-list-manager>*
 
 ## Installation
 To get the project up and running, and view the project in the browser, complete the following steps:
 
-1. Clone this repo: `git@github.com:jonbrownm/init-project.git`
+1. Clone this repo: `git@github.com:jonbrownm/app-list-manager.git`
 2. cd `init-project`
 3. Install Node.js: <https://nodejs.org/>
 4. Install Grunt: `npm install grunt`
@@ -25,7 +25,7 @@ To deploy this to the current production environment, you can deploy a static in
 
 * `grunt prod`
 
-This will publish the contents of `dist` to <http://dev.jonbrownm.com>/repoSlug.
+This will publish the contents of `dist` to <http://dev.jonbrownm.com/app-list-manager>.
 This is defined in the package.json and should be set when the project is replicated.
 
 ## Foundation
