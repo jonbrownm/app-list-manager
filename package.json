@@ -1,9 +1,9 @@
 {
-	"name": "Init Project",
-	"repoSlug": "init-project",
+	"name": "App List Manager",
+	"repoSlug": "app-list-manager",
 	"version": "1.2.0",
 	"author": "Jonathan Brown",
-	"description": "Basic bootstrap project to build applications with grunt",
+	"description": "Simple app to manage a list of items",
 	"private": true,
 	"main": "Gruntfile.js",
 	"scripts": {
