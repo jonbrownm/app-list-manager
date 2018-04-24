@@ -1,4 +1,6 @@
 
+import {returnItemId} from './returnItemId';
+
 export const addItemToList = (elementTable, elementUserInput) => {
 	
 	if (elementUserInput) {
@@ -8,6 +10,7 @@ export const addItemToList = (elementTable, elementUserInput) => {
 			newCellWithDelete = newRow.insertCell(0);
 
 
+		newRow.setAttribute("data-item-id", returnItemId(), 0);
 		newCellWithInput.innerHTML = "<button class='button small secondary app-list-manager_input-delete'>Delete</button>";
 		newCellWithDelete.innerHTML = elementUserInput;
 
