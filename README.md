@@ -1,12 +1,12 @@
+## App List Manager
+
+App List Manager is a simple browser based tool to manage a single list. Items can be added and removed from the list. Data is contained within the browser local storage so even when the session ends, items will be retained for next time.
+
 ## Overview
 
 This repository contains everything for building, running and deploying dev.jonbrownm.com/app-list-manager.
 
 *Latest version running on <http://dev.jonbrownm.com/app-list-manager>*
-
-## App List Manager
-
-App List Manager is a simple browser based tool to manage a single list. Items can be added and removed from the list. Data is contained within the browser local storage so even when the session ends, items will be retained for next time.
 
 ## Installation
 To get the project up and running, and view the project in the browser, complete the following steps:
