@@ -8,7 +8,7 @@ export const initialiseList = (appNotificationEmpty, elementTable) => {
 	    var newRow = elementTable.insertRow(0),
 			newCellWithInput = newRow.insertCell(0),
 			newCellWithDelete = newRow.insertCell(0),
-			newItemId = i + 1,
+			newItemId = localStorage.key(i),
 			newItemDescription = localStorage.getItem(localStorage.key(i));
 
 
