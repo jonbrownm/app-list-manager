@@ -1,7 +1,8 @@
 
 import {returnItemId} from './returnItemId';
+import {displayNotification} from './displayNotification';
 
-export const addItem = (elementTable, elementUserInput) => {
+export const addItem = (elementTable, elementUserInput, appNotification) => {
 	
 	if (elementUserInput) {
 
@@ -17,6 +18,12 @@ export const addItem = (elementTable, elementUserInput) => {
 
 		localStorage.setItem(newItemId, elementUserInput);
 
+		displayNotification(appNotification, 0, "OFF");
+		displayNotification(appNotification, 2, "ON");
+
+	}
+	else {
+		displayNotification(appNotification, 1, "ON");
 	}
 
 }

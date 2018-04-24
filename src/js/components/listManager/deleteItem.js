@@ -16,4 +16,11 @@ export const deleteItem = (elementUserDelete) => {
 		
 	});
 
+	if (localStorage.length > 0) {
+		displayNotification(appNotification, 0, "OFF");
+	}
+	else {
+		displayNotification(appNotification, 0, "ON");		
+	}
+
 }

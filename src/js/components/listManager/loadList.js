@@ -1,5 +1,7 @@
 
-export const loadList = (elementTable) => {
+import {displayNotification} from './displayNotification';
+
+export const loadList = (elementTable, appNotification) => {
 
 	for (var i = 0; i < localStorage.length; i++){
 
@@ -14,6 +16,13 @@ export const loadList = (elementTable) => {
 		newCellWithInput.innerHTML = "<button class='button small secondary app-list-manager_input-delete' data-item-delete>Delete</button>";
 		newCellWithDelete.innerHTML = newItemDescription;
 
+	}
+
+	if (localStorage.length > 0) {
+		displayNotification(appNotification, 0, "OFF");
+	}
+	else {
+		displayNotification(appNotification, 0, "ON");		
 	}
 
 }
