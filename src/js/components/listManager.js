@@ -1,4 +1,5 @@
 
+import {initialiseList} from './listManager/initialiseList';
 import {getItem} from './listManager/getItem';
 import {addItem} from './listManager/addItem';
 import {deleteItem} from './listManager/deleteItem';
@@ -17,6 +18,8 @@ export const listManager = () => {
 			elementTable = document.querySelector("[data-app-list-manager] table"),
 			elementUserDelete;
 
+
+		initialiseList(appNotificationEmpty, elementTable);
 
 		elementUserSubmit.addEventListener("click", function() {
 			addItem(elementTable, getItem(elementUserInput));

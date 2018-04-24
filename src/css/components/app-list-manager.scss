@@ -1,5 +1,9 @@
 .app-list-manager {
-	margin: 3rem 0;
+	margin: .5rem 0;
+
+	@include breakpoint(medium) {
+		margin: 3rem 0;
+	}
 
 	.app-list-manager_list {
 

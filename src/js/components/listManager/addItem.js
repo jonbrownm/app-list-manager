@@ -8,7 +8,7 @@ export const addItem = (elementTable, elementUserInput) => {
 		var newRow = elementTable.insertRow(0),
 			newCellWithInput = newRow.insertCell(0),
 			newCellWithDelete = newRow.insertCell(0),
-			newItemId = returnItemId();
+			newItemId = returnItemId(elementTable);
 
 
 		newRow.setAttribute("data-item-id", newItemId, 0);
