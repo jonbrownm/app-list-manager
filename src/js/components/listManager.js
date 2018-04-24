@@ -1,6 +1,7 @@
 
 import {getItem} from './listManager/getItem';
 import {addItem} from './listManager/addItem';
+import {deleteItem} from './listManager/deleteItem';
 
 const appListManager = document.querySelector("[data-app-list-manager]");
 
@@ -11,8 +12,8 @@ export const listManager = () => {
 
 		var elementUserInput = document.querySelector("[data-app-list-manager] input[type='text']"),
 			elementUserSubmit = document.querySelector("[data-app-list-manager] input[type='submit']"),
-			elementUserDelete = document.querySelectorAll("[data-app-list-manager] button[data-item-delete]"),
-			elementTable = document.querySelector("[data-app-list-manager] table");
+			elementTable = document.querySelector("[data-app-list-manager] table"),
+			elementUserDelete;
 
 
 		elementUserSubmit.addEventListener("click", function() {
@@ -26,11 +27,12 @@ export const listManager = () => {
 			}
 		});
 
-		[].forEach.call(elementUserDelete, function(button) {
-			button.addEventListener("click", function() {
-				console.log("hello");
-			});
-		});
+		elementTable.addEventListener("click", function (event) {
+			if (event.target.classList.contains("button")) {
+				elementUserDelete = event.target;
+				deleteItem(elementUserDelete);
+			}
+		})
 
 	}
 	
