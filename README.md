@@ -1,8 +1,12 @@
 ## Overview
 
-This repository contains everything for building, running and deploying dev.jonbrownm.com/repoSlug.
+This repository contains everything for building, running and deploying dev.jonbrownm.com/app-list-manager.
 
 *Latest version running on <http://dev.jonbrownm.com/app-list-manager>*
+
+## App List Manager
+
+App List Manager is a simple browser based tool to manage a single list. Items can be added and removed from the list. Data is contained within the browser local storage so even when the session ends, items will be retained for next time.
 
 ## Installation
 To get the project up and running, and view the project in the browser, complete the following steps:
@@ -31,8 +35,6 @@ This is defined in the package.json and should be set when the project is replic
 ## Foundation
 
 Foundation is available in this project (needs to be added). The imported components can be customised as required. The settings file includes variables that can be customized for each component. The full documentation for Foundation can be found at <https://foundation.zurb.com/sites/docs/>.
-
-* `npm install foundation-sites`
 
 ## Repository structure
 The following information details the structure of the codebase…
