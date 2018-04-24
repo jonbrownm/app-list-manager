@@ -12,7 +12,7 @@ export const listManager = () => {
 	// only fire for `appListManager`
 	if (appListManager) {
 
-		var appNotificationEmpty = document.querySelector("[data-app-list-manager] [data-app-notification='empty']"),
+		var appNotificationEmpty = document.querySelector("[data-app-list-manager] [data-app-notification]"),
 			elementUserInput = document.querySelector("[data-app-list-manager] input[type='text']"),
 			elementUserSubmit = document.querySelector("[data-app-list-manager] input[type='submit']"),
 			elementTable = document.querySelector("[data-app-list-manager] table"),
