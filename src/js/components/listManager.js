@@ -17,6 +17,13 @@ export const listManager = () => {
 			addItemToList(elementTable, getUserItem(elementUserInput));
 		});
 
+		elementUserInput.addEventListener("keyup", function(event) {
+			event.preventDefault();
+			if (event.keyCode === 13) {
+				addItemToList(elementTable, getUserItem(elementUserInput));
+			}
+		});
+
 	}
 	
 }
