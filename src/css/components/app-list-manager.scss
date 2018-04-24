@@ -14,6 +14,11 @@
 			color: $dark-gray;
 			background: $light-gray;
 			border-radius: $global-radius;
+
+			&:hover, &:focus {
+				border-bottom: solid 1px $medium-gray;
+			}
+
 		}
 
 	}
