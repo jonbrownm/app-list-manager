@@ -11,6 +11,7 @@ export const listManager = () => {
 
 		var elementUserInput = document.querySelector("[data-app-list-manager] input[type='text']"),
 			elementUserSubmit = document.querySelector("[data-app-list-manager] input[type='submit']"),
+			elementUserDelete = document.querySelectorAll("[data-app-list-manager] button[data-item-delete]"),
 			elementTable = document.querySelector("[data-app-list-manager] table");
 
 
@@ -23,6 +24,12 @@ export const listManager = () => {
 			if (event.keyCode === 13) {
 				addItem(elementTable, getItem(elementUserInput));
 			}
+		});
+
+		[].forEach.call(elementUserDelete, function(button) {
+			button.addEventListener("click", function() {
+				console.log("hello");
+			});
 		});
 
 	}

@@ -11,7 +11,7 @@ export const addItem = (elementTable, elementUserInput) => {
 
 
 		newRow.setAttribute("data-item-id", returnItemId(), 0);
-		newCellWithInput.innerHTML = "<button class='button small secondary app-list-manager_input-delete'>Delete</button>";
+		newCellWithInput.innerHTML = "<button class='button small secondary app-list-manager_input-delete' data-item-delete>Delete</button>";
 		newCellWithDelete.innerHTML = elementUserInput;
 
 	}
