@@ -1,7 +1,5 @@
 
-import {appNotification} from './appNotification';
-
-export const loadList = (appNotificationEmpty, elementTable) => {
+export const loadList = (elementTable) => {
 
 	for (var i = 0; i < localStorage.length; i++){
 
@@ -17,7 +15,5 @@ export const loadList = (appNotificationEmpty, elementTable) => {
 		newCellWithDelete.innerHTML = newItemDescription;
 
 	}
-
-	appNotification(appNotificationEmpty, elementTable);
 
 }
