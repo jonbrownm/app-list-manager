@@ -1,5 +1,5 @@
 
-import {initialiseList} from './listManager/initialiseList';
+import {loadList} from './listManager/loadList';
 import {getItem} from './listManager/getItem';
 import {addItem} from './listManager/addItem';
 import {deleteItem} from './listManager/deleteItem';
@@ -19,13 +19,16 @@ export const listManager = () => {
 			elementUserDelete;
 
 
-		initialiseList(appNotificationEmpty, elementTable);
+		// fires on page load
+		loadList(appNotificationEmpty, elementTable);
 
+		// fires on submit click
 		elementUserSubmit.addEventListener("click", function() {
 			addItem(elementTable, getItem(elementUserInput));
 			appNotification(appNotificationEmpty, elementTable);
 		});
 
+		// fires on enter submit
 		elementUserInput.addEventListener("keyup", function(event) {
 			event.preventDefault();
 			if (event.keyCode === 13) {
@@ -34,8 +37,9 @@ export const listManager = () => {
 			}
 		});
 
+		// fires on delete click
 		elementTable.addEventListener("click", function (event) {
-			if (event.target.classList.contains("button")) {
+			if (event.target.hasAttribute("data-item-delete")) {
 				elementUserDelete = event.target;
 				deleteItem(elementUserDelete);
 				appNotification(appNotificationEmpty, elementTable);

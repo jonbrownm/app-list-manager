@@ -1,7 +1,7 @@
 
 import {appNotification} from './appNotification';
 
-export const initialiseList = (appNotificationEmpty, elementTable) => {
+export const loadList = (appNotificationEmpty, elementTable) => {
 
 	for (var i = 0; i < localStorage.length; i++){
 
