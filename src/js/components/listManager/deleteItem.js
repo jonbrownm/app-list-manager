@@ -10,7 +10,7 @@ export const deleteItem = (elementUserDelete) => {
 		currentTableRowId = row.getAttribute("data-item-id");
 
 		if (currentActiveId === currentTableRowId) {
-			row.style.display = "none";
+			row.remove();
 		}
 		
 	});
