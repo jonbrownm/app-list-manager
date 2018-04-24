@@ -1,8 +1,18 @@
 
 export const deleteItem = (elementUserDelete) => {
 
-	var currentActiveId = elementUserDelete.parentElement.parentElement.getAttribute("data-item-id");
+	var currentTableRows = document.querySelectorAll("[data-app-list-manager] table tbody tr"),
+		currentActiveId = elementUserDelete.parentElement.parentElement.getAttribute("data-item-id"),
+		currentTableRowId;
 
-	console.log(currentActiveId);
+
+	[].forEach.call(currentTableRows, function(row){
+		currentTableRowId = row.getAttribute("data-item-id");
+
+		if (currentActiveId === currentTableRowId) {
+			row.style.display = "none";
+		}
+		
+	});
 
 }
