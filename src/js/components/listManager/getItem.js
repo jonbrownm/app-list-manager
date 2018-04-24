@@ -1,5 +1,5 @@
 
-export const getUserItem = (elementUserInput) => {
+export const getItem = (elementUserInput) => {
 
 	var elementUserDataItem = elementUserInput.value;
 

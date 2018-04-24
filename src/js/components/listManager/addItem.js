@@ -1,7 +1,7 @@
 
 import {returnItemId} from './returnItemId';
 
-export const addItemToList = (elementTable, elementUserInput) => {
+export const addItem = (elementTable, elementUserInput) => {
 	
 	if (elementUserInput) {
 

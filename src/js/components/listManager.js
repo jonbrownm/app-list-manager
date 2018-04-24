@@ -1,6 +1,6 @@
 
-import {getUserItem} from './listManager/getUserItem';
-import {addItemToList} from './listManager/addItemToList';
+import {getItem} from './listManager/getItem';
+import {addItem} from './listManager/addItem';
 
 const appListManager = document.querySelector("[data-app-list-manager]");
 
@@ -15,13 +15,13 @@ export const listManager = () => {
 
 
 		elementUserSubmit.addEventListener("click", function() {
-			addItemToList(elementTable, getUserItem(elementUserInput));
+			addItem(elementTable, getItem(elementUserInput));
 		});
 
 		elementUserInput.addEventListener("keyup", function(event) {
 			event.preventDefault();
 			if (event.keyCode === 13) {
-				addItemToList(elementTable, getUserItem(elementUserInput));
+				addItem(elementTable, getItem(elementUserInput));
 			}
 		});
 
