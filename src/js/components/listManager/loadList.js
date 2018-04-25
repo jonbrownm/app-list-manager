@@ -18,11 +18,8 @@ export const loadList = (elementTable, appNotification) => {
 
 	}
 
-	if (localStorage.length > 0) {
-		displayNotification(appNotification, 0, "OFF");
-	}
-	else {
-		displayNotification(appNotification, 0, "ON");		
+	if (!localStorage.length > 0) {
+		displayNotification(appNotification, 0, "2000");
 	}
 
 }

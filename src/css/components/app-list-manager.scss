@@ -38,11 +38,13 @@
 	}
 
 	.app-list-manager_notification {
+		opacity: 0;
 		color: $dark-gray;
 		font-size: 0.9rem;
 		position: absolute;
 		left: .625rem;
 		right: .625rem;
+		transition: opacity .1s ease-in;
 		border: solid 1px $light-gray;
 	}
 
