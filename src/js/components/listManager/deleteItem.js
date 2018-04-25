@@ -1,5 +1,7 @@
 
-export const deleteItem = (elementUserDelete) => {
+import {displayNotification} from './displayNotification';
+
+export const deleteItem = (elementUserDelete, appNotification) => {
 
 	var currentTableRows = document.querySelectorAll("[data-app-list-manager] table tbody tr"),
 		currentId = elementUserDelete.parentElement.parentElement.getAttribute("data-item-id"),
@@ -16,11 +18,6 @@ export const deleteItem = (elementUserDelete) => {
 		
 	});
 
-	if (localStorage.length > 0) {
-		displayNotification(appNotification, 0, "OFF");
-	}
-	else {
-		displayNotification(appNotification, 0, "ON");		
-	}
+	displayNotification(appNotification, 3, "2000");
 
 }
