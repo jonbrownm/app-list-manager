@@ -12,7 +12,8 @@ export const listManager = () => {
 	// only fire for `appListManager`
 	if (appListManager) {
 
-		var appNotification = document.querySelector("[data-app-list-manager] div[data-app-notification]"),
+		var appDataList = [],
+			appNotification = document.querySelector("[data-app-list-manager] div[data-app-notification]"),
 			elementUserInput = document.querySelector("[data-app-list-manager] input[type='text']"),
 			elementUserSubmit = document.querySelector("[data-app-list-manager] input[type='submit']"),
 			elementTable = document.querySelector("[data-app-list-manager] table");
@@ -23,14 +24,14 @@ export const listManager = () => {
 
 		// fires on submit click
 		elementUserSubmit.addEventListener("click", function() {
-			addItem(elementTable, getItem(elementUserInput), appNotification);
+			addItem(appDataList, elementTable, getItem(elementUserInput), appNotification);
 		});
 
 		// fires on enter submit
 		elementUserInput.addEventListener("keyup", function(event) {
 			event.preventDefault();
 			if (event.keyCode === 13) {
-				addItem(elementTable, getItem(elementUserInput));
+				addItem(appDataList, elementTable, getItem(elementUserInput), appNotification);
 			}
 		});
 

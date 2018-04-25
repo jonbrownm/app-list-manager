@@ -2,7 +2,7 @@
 import {returnItemId} from './returnItemId';
 import {displayNotification} from './displayNotification';
 
-export const addItem = (elementTable, elementUserInput, appNotification) => {
+export const addItem = (appDataList, elementTable, elementUserInput, appNotification) => {
 	
 	if (elementUserInput) {
 
@@ -16,6 +16,8 @@ export const addItem = (elementTable, elementUserInput, appNotification) => {
 		newCellWithInput.innerHTML = "<button class='button small secondary app-list-manager_input-delete' data-item-delete>Delete</button>";
 		newCellWithDelete.innerHTML = elementUserInput;
 
+		appDataList.push(elementUserInput);
+		console.log(appDataList);
 		localStorage.setItem(newItemId, elementUserInput);
 
 		displayNotification(appNotification, 2, "2000");
