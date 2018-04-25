@@ -18,7 +18,6 @@ export const addItem = (elementTable, elementUserInput, appNotification) => {
 
 		localStorage.setItem(newItemId, elementUserInput);
 
-		displayNotification(appNotification, 0, "OFF");
 		displayNotification(appNotification, 2, "2000");
 
 	}
