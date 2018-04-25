@@ -40,10 +40,14 @@
 	.app-list-manager_notification {
 		color: $dark-gray;
 		font-size: 0.9rem;
+		position: absolute;
+		left: .625rem;
+		right: .625rem;
 		border: solid 1px $light-gray;
 	}
 
-	.app-list-manager_list {	
+	.app-list-manager_list {
+		margin-top: 4rem;
 	}
 
 }

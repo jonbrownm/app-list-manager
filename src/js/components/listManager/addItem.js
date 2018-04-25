@@ -24,7 +24,7 @@ export const addItem = (elementTable, elementUserInput, appNotification) => {
 	}
 	
 	else {
-		displayNotification(appNotification, 1, "ON");
+		displayNotification(appNotification, 1, "2000");
 	}
 
 }
