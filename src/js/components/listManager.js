@@ -43,7 +43,7 @@ export const listManager = () => {
 
 			if (event.target.hasAttribute("data-item-delete")) {
 				elementUserDelete = event.target;
-				deleteItem(elementUserDelete, appNotification);
+				deleteItem(appDataList, elementUserDelete, appNotification);
 			}
 		})
 

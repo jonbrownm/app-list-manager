@@ -17,7 +17,6 @@ export const addItem = (appDataList, elementTable, elementUserInput, appNotifica
 		newCellWithDelete.innerHTML = elementUserInput;
 
 		appDataList.push(elementUserInput);
-		console.log(appDataList);
 		localStorage.setItem(newItemId, elementUserInput);
 
 		displayNotification(appNotification, 2, "2000");
