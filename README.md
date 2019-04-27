@@ -4,9 +4,9 @@ App List Manager is a simple browser based tool to manage a single list. Items c
 
 ## Overview
 
-This repository contains everything for building, running and deploying dev.jonbrownm.com/app-list-manager.
+This repository contains everything for building, running and deploying portfolio.jonbrownm.com/app-list-manager.
 
-*Latest version running on <http://dev.jonbrownm.com/app-list-manager>*
+*Latest version running on <http://portfolio.jonbrownm.com/app-list-manager>*
 
 ## Installation
 To get the project up and running, and view the project in the browser, complete the following steps:
@@ -29,7 +29,7 @@ To deploy this to the current production environment, you can deploy a static in
 
 * `grunt prod`
 
-This will publish the contents of `dist` to <http://dev.jonbrownm.com/app-list-manager>.
+This will publish the contents of `dist` to <http://portfolio.jonbrownm.com/app-list-manager>.
 This is defined in the package.json and should be set when the project is replicated.
 
 ## Foundation
